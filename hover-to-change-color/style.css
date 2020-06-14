@@ -1,16 +1,18 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: azure;
   font: 16px/1.5 Helvetica, sans-serif;
 }
-.main{
+
+.main {
   width: 98%;
   height: 100vh;
   background-color: azue;
   text-align: center;
 }
-.container{
+
+.container {
   margin-top: 30vh;
   display: inline-block;
   width: 62%;
@@ -18,7 +20,8 @@ body{
   border: 2px dotted lightsalmon;
   text-align: center;
 }
-.blocks{
+
+.blocks {
   display: inline-block;
   /* text-align: center; */
   margin: 0 auto;
@@ -27,30 +30,66 @@ body{
   height: 12vh;
   width: 100%;
 }
-.block{
+
+.block {
   /* margin-left: 0.1%; */
   float: left;
   height: 12vh;
   width: 20%;
   /* border: 2px solid azure; */
 }
-.block:hover{
+
+.block:hover {
   height: 11.5vh;
   width: 18%;
   border: 2.5px solid darkslategray;
 }
-.block1{
+
+.block1 {
   background-color: limegreen;
 }
-.block2{
+
+.block2 {
   background-color: maroon;
 }
-.block3{
+
+.block3 {
   background-color: midnightblue;
 }
-.block4{
+
+.block4 {
   background-color: olivedrab;
 }
-.block5{
+
+.block5 {
   background-color: peru;
+}
+.hoverArea {
+  position: absolute;
+  top: 42.2vh;
+  left: 18.5%;
+  width: 61%;
+  height: 0;
+  transition: height 1s ease-in-out;
+  /* border: 2px solid black; */
+}
+.block1:hover>.hoverArea {
+  background-color: limegreen;
+  height: 28.2vh;
+}
+.block2:hover>.hoverArea {
+  background-color: maroon;
+  height: 28.2vh;
+}
+.block3:hover>.hoverArea {
+  background-color: midnightblue;
+  height: 28.2vh;
+}
+.block4:hover>.hoverArea {
+  background-color: olivedrab;
+  height: 28.2vh;
+}
+.block5:hover>.hoverArea {
+  background-color: peru;
+  height: 28.2vh;
 }
