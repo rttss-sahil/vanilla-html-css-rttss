@@ -4,26 +4,27 @@ body
     padding: 0;
     background: black;
 }
+*{
+  outline: none;
+}
 section
 {
     text-align: center;
-    width: 100%;
-    height: 98vh;
+    /* width: 98%; */
+    /* height: 98vh; */
 }
 #rect
 {
     position: absolute;
     left: 0;
     top: 0;
-    outline: 0;
-    width: 100%;
-    height: 98vh;
+    width: 99%;
+    height: 99vh;
     margin: 0;
-    padding: 0;
-    z-index: 1;
-    border: black;
+    padding: 0px;
+    z-index: -1;
 }
-#circlediv{
+/* #circlediv{
     display: inline-block;
     border-radius: 50%;
     position: relative;
@@ -33,16 +34,40 @@ section
     z-index: 9;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -10px -10px 10px rgba(0, 0, 0, 0.5),
     10px -10px 10px rgba(0, 0, 0, 0.5), -10px 10px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 #circle
 {
+  display: inline-block;
+  /* margin: 24vh 25%; */
+  height: 250px;
+  width: 250px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+  -10px -10px 10px rgba(0, 0, 0, 0.5),
+  10px -10px 10px rgba(0, 0, 0, 0.5),
+  -10px 10px 10px rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
-    border: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
+    /* border: none; */
+    /* border: transparent; */
+    position: absolute;
+    top: 24vh;
+    left: 25%;
+    /* width: 100%; */
+    /* height: 100%; */
     border-radius: 50%;
-    outline: none;
     overflow: hidden;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
 }
