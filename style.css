@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif
+}
+h1{
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  color: #0087FF;
+}
+a:hover{
+  text-decoration: underline;
+}
+ol{
+  margin-left: 40px;
+}
+ol li{
+  text-align: left;
+}
