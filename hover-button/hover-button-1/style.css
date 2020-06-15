@@ -1,0 +1,68 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(../../ubuntu/Ubuntu-Bold.ttf);
+}
+@media (max-width: 6.2in) {
+  
+body{
+  margin: 0;
+  padding: 0;
+  background-color: mediumspringgreen;
+}
+button{
+  border-width: 0;
+  outline: none;
+}
+section{
+  height: 10vh;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px dotted black; */
+  padding: .5% 1%;
+  border-radius: 40px;
+  background-color: ivory;
+  box-shadow: 4px 7px 5px rgba( 170, 170, 170, 0.7), -4px 7px 5px rgba( 170, 170, 170, 0.7), 0px -4px 5px rgba( 170, 170, 170, 0.7);
+}
+.container{
+  width: max-content;
+  position: absolute;
+  /* border: 2px solid black; */
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+.button{
+  background-color: mintcream;
+  font: 18px ubuntu;
+  /* border: 1px solid black; */
+  position: relative;
+  height: 80%;
+  width: 12.5%;
+  margin: 1vh 0 1vh 0;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba( 170, 170, 170, 0.7), -2px -2px 3px rgba(170, 170, 170, 0.7), inset 1px 1px 2px rgba(170, 170, 170, 0.7), inset -1px -1px 2px rgba(170, 170, 170, 0.7);
+}
+.button1{
+  border-radius: 40px 5px 5px 40px;
+}
+.button4{
+  background-color: mediumspringgreen;
+  opacity: 0.8;
+}
+.button7{
+  border-radius: 5px 40px 40px 5px;
+}
+.button:hover{
+  background-color: mediumspringgreen;
+  font-size: 20px;
+  opacity: 1;
+  border-radius: 7px;
+}
+}
