@@ -1,36 +1,55 @@
-body{
+body {
+  background-color: rgba(51, 51, 51, 0.3);
   margin: 0;
   padding: 0;
 }
-section{
-  position: absolute;
-  top: 0;
-  left: 0;
+.loader {
+  /* z-index: 9; */
+  position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
-.loader::before{
-  content: '';
+.loader:hover{
+  z-index: -1;
+}
+.loader::before {
+  content: "";
   position: absolute;
   left: 0%;
   width: 50%;
   height: 100vh;
-  background-color: blue;
+  background-color: black;
   transition: 1s;
 }
-.loader #complete::before {
+.loader.complete::before {
   width: 0%;
 }
-.loader::after{
-  content: '';
+.loader::after {
+  content: "";
   position: absolute;
   right: 0%;
   width: 50%;
   height: 100vh;
-  background-color: red;
+  background-color: black;
   transition: 1s;
 }
-.loader #complete::after {
+.loader.complete::after {
   width: 0%;
+}
+iframe {
+  border: none;
+  position: absolute;
+  z-index: -1;
+  margin: 19vh 20%;
+  box-shadow: 3px 3px 3px rgb(51, 51, 51, 0.7),
+    -3px 3px 3px rgb(51, 51, 51, 0.7), 3px -3px 3px rgb(51, 51, 51, 0.7),
+    -3px -3px 3px rgb(51, 51, 51, 0.7);
+  border-radius: 20px;
+}
+iframe:hover {
+  z-index: 9;
+  box-shadow: 10px 10px 10px rgb(51, 51, 51, 0.7),
+    -10px 10px 10px rgb(51, 51, 51, 0.7), 10px -10px 10px rgb(51, 51, 51, 0.7),
+    -10px -10px 10px rgb(51, 51, 51, 0.7);
 }

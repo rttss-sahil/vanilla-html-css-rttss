@@ -3,18 +3,22 @@
 
 <head>
   <link rel="stylesheet" href="style.css" title="" type="" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Loading Square</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading Square</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"
+    charset="utf-8"></script>
 </head>
 
 <body>
-  <section>
   <div class="loader"></div>
-  </section>
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/GwxfSmKWX_k?controls=0">
+  <iframe width="60%" height="60%" src="https://www.youtube.com/embed/GwxfSmKWX_k?controls=0">
   </iframe>
 </body>
+<script>
+  $(window).on("load", function () {
+    $(".loader").addClass("complete")
+  });
+</script>
 
 </html>
