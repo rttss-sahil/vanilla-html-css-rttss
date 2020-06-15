@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading 0-100%</title>
+</head>
+
+<body>
+  <div class="welcome">
+    <h2>Welcome...</h2>
+  </div>
+  <section>
+    <div class="loader"></div>
+    <div class="count"></div>
+  </section>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var count = 0
+    var counter = setInterval(function() {
+      if (count < 101) {
+        $(".count").text(count + '%')
+        $(".loader").css('width', count + '%')
+        count++
+      }
+    }, 25)
+  })
+</script>
+
+</html>

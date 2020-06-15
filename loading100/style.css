@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif
+  /* background-color: black; */
+}
+section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  animation: fadeout 0.5s linear forwards;
+  animation-delay: 2.75s;
+}
+@keyframes fadeout{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+.count{
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 5rem;
+  color: white;
+  mix-blend-mode: difference;
+}
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* width: 0%; */
+  background-color: black;
+}
+.welcome{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome h2{
+  font-weight: 500;
+}
