@@ -38,10 +38,14 @@ body {
   width: 0%;
 }
 iframe {
+  height: 40vh;
+  width: 50%;
   border: none;
   position: absolute;
   z-index: -1;
-  margin: 19vh 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 3px 3px 3px rgb(51, 51, 51, 0.7),
     -3px 3px 3px rgb(51, 51, 51, 0.7), 3px -3px 3px rgb(51, 51, 51, 0.7),
     -3px -3px 3px rgb(51, 51, 51, 0.7);
