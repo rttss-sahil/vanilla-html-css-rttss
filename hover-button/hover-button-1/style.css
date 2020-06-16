@@ -52,6 +52,9 @@ section{
 .button1{
   border-radius: 40px 5px 5px 40px;
 }
+.button .button1:hover {
+  border-radius: 40px 7px 7px 40px;
+}
 .button4{
   background-color: mediumspringgreen;
   opacity: 0.8;
@@ -59,10 +62,13 @@ section{
 .button7{
   border-radius: 5px 40px 40px 5px;
 }
+.button .button7:hover{
+  border-radius: 7px 40px 40px 7px;
+}
 .button:hover{
   background-color: mediumspringgreen;
   font-size: 20px;
-  opacity: 1;
-  border-radius: 7px;
+  /* opacity: 1; */
+  /* border-radius: 7px; */
 }
 }
