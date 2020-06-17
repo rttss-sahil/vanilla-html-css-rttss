@@ -1,0 +1,111 @@
+@font-face {
+  font-family: ubuntu-b;
+  src: url(../../ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  src: url(../../ubuntu/Ubuntu-Medium.ttf);
+}
+a {
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff0077;
+  font-family: ubuntu;
+}
+@media (min-width: 770px) {
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    height: 10%;
+    border-radius: 30px;
+    width: 45%;
+    background-color: white;
+  }
+
+  .container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .button {
+    margin: 0 1.25%;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.05),
+      -2px 2px 2px rgba(255, 255, 255, 0.05),
+      2px -2px 2px rgba(255, 255, 255, 0.05),
+      -2px -2px 2px rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  .active a{
+    background-color: black;
+    color: white;
+  }
+  a {
+    border-radius: 30px;
+    padding: 10px 15px;
+    transition: 0.075s linear;
+  }
+  a:hover {
+    background-color: black;
+    color: white;
+  }
+}
+@media (max-width: 770px) {
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    height: 8%;
+    border-radius: 30px;
+    width: 70%;
+    background-color: white;
+  }
+
+  .container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .button {
+    margin: 0 1.25%;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.05),
+      -2px 2px 2px rgba(255, 255, 255, 0.05),
+      2px -2px 2px rgba(255, 255, 255, 0.05),
+      -2px -2px 2px rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  .active a{
+    background-color: black;
+    color: white;
+  }
+  a {
+    border-radius: 30px;
+    padding: 10px 15px;
+    transition: 0.075s linear;
+  }
+  a:hover {
+    background-color: black;
+    color: white;
+  }
+}
