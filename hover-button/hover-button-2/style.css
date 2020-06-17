@@ -1,0 +1,126 @@
+* {
+    rgba(0, 0, 0, 0.8)
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../../ubuntu/Ubuntu-Bold.ttf);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    button {
+        border-width: 0;
+        outline: none;
+    }
+
+    section {
+        height: 10vh;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 2px dotted black; */
+        padding: 0.5% 1%;
+        border-radius: 40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 4px 7px 5px rgba(170, 170, 170, 0.7),
+            -4px 7px 5px rgba(170, 170, 170, 0.7),
+            0px -4px 5px rgba(170, 170, 170, 0.7);
+    }
+
+    .button {
+        color: dimgray;
+        background-color: rgba(0, 0, 0, 0.8);
+        font: 18px ubuntu;
+        /* border: 1px solid black; */
+        position: relative;
+        height: 80%;
+        width: 12.5%;
+        margin: 1vh 0 1vh 0;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px rgba(170, 170, 170, 0.7),
+            -2px -2px 3px rgba(170, 170, 170, 0.7),
+            1px 1px 2px rgba(170, 170, 170, 0.7),
+            -1px -1px 2px rgba(170, 170, 170, 0.7);
+    }
+
+    .active {
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0.8;
+    }
+
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 20px;
+        opacity: 1;
+        border-radius: 7px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button {
+    border-width: 0;
+    outline: none;
+}
+
+section {
+    height: 12.5vh;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px dotted black; */
+    padding: 0.5% auto;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 7px 5px rgba(170, 170, 170, 0.7),
+        -4px 7px 5px rgba(170, 170, 170, 0.7),
+        0px -4px 5px rgba(170, 170, 170, 0.7);
+}
+
+.button {
+    text-align: center;
+    color: dimgray;
+    background-color: rgba(0, 0, 0, 0.8);
+    font: 18px ubuntu;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    height: 80%;
+    width: 12.5%;
+    /* margin: 1.5vh auto; */
+    /* padding: 5px; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(170, 170, 170, 0.7),
+        -2px -2px 3px rgba(170, 170, 170, 0.7),
+        1px 1px 2px rgba(170, 170, 170, 0.7),
+        -1px -1px 2px rgba(170, 170, 170, 0.7);
+}
+
+p {
+    display: inline;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+}
+
+.button:hover {
+    /* font-size: 20px; */
+    /* opacity: 1; */
+    /* border-radius: 7px; */
+}

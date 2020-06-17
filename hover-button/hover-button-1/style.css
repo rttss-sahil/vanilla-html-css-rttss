@@ -56,7 +56,7 @@
   #button1 {
     border-radius: 40px 5px 5px 40px;
   }
-  .button4 {
+  .active {
     background-color: mediumspringgreen;
     opacity: 0.8;
   }
@@ -148,7 +148,7 @@
     border-radius: 40px 5px 5px 40px;
   }
 
-  .button4 {
+  .active {
     background-color: mediumspringgreen;
     opacity: 0.8;
   }
@@ -240,7 +240,7 @@
     height: 80%;
     width: 12.5%;
     margin: 1.5vh 0 1.5vh 0;
-    padding: 5px;
+    padding: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgba(170, 170, 170, 0.7),
       -2px -2px 3px rgba(170, 170, 170, 0.7),
@@ -252,7 +252,7 @@
     border-radius: 40px 5px 5px 40px;
   }
 
-  .button4 {
+  .active {
     background-color: mediumspringgreen;
     opacity: 0.8;
   }
