@@ -10,17 +10,48 @@
 </head>
 
 <body>
-  <section>
+  <section id="page">
     <ul>
-      <li class="prev"><a>&#60Prev</a></li>
-      <li class="num"><a href="#">1</a></li>
-      <li class="num"><a href="#">2</a></li>
-      <li class="num"><a href="#">3</a></li>
-      <li class="num"><a href="#">4</a></li>
-      <li class="num"><a href="#">5</a></li>
-      <li class="next"><a href="#">Next&#62</a></li>
+      <li class="prev"><a href="#">&#60&#60Prev</a></li>
+      <li class="num active one"><a href="#">1</a></li>
+      <li class="num two"><a href="#">2</a></li>
+      <li class="num three"><a href="#">3</a></li>
+      <li class="num four"><a href="#">4</a></li>
+      <li class="num five"><a href="#">5</a></li>
+      <li class="next"><a href="#">Next&#62&#62</a></li>
     </ul>
   </section>
 </body>
-
+  <script>
+    $(document).ready(function(){
+      $(".next").click(function(){
+        $("#page").find(".num.active").next().addClass("active");
+        $("#page").find(".num.active").prev().removeClass("active");
+      })
+      $(".prev").click(function(){
+        $("#page").find(".num.active").prev().addClass("active");
+        $("#page").find(".num.active").next().removeClass("active");
+      })
+      $(".one").click(function(){
+        $("#page").find(".num.active").removeClass("active");
+        $(".one").addClass("active");
+      })
+      $(".two").click(function(){
+        $("#page").find(".num.active").removeClass("active");
+        $(".two").addClass("active")
+      })
+      $(".three").click(function(){
+        $("#page").find(".num.active").removeClass("active");
+        $(".three").addClass("active")
+      })
+      $(".four").click(function(){
+        $("#page").find(".num.active").removeClass("active");
+        $(".four").addClass("active")
+      })
+      $(".five").click(function(){
+        $("#page").find(".num.active").removeClass("active");
+        $(".five").addClass("active")
+      })
+    })
+  </script>
 </html>
