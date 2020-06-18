@@ -1,0 +1,64 @@
+@font-face {
+  font-family: ubuntu-b;
+  src: url(../../ubuntu/ubuntu/Ubuntu-Bold.ttf)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: sandybrown;
+}
+
+a {
+  font-family: ubuntu-b;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 8%;
+    width: 70%;
+    border-radius: 35px;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      -2px 7px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+  }
+  
+  section ul {
+    position: relative;
+    height: 85%;
+    width: 100%;
+  }
+
+  section ul li {
+    display: inline-block;
+    position: relative;
+    height: 50%;
+    list-style: none;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  section ul .num {
+    width: 10.5%;
+  }
+  
+  .active{
+    background-color: black;
+  }
+
+  section ul .prev,
+  section ul .next {
+    width: 16%;
+  }
+
+  ul .num:hover a{
+    background-color: black;
+    color: white;
+  }
+}
