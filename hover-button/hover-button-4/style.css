@@ -1,6 +1,6 @@
 @font-face {
-  font-family: ubuntu-b;
-  src: url(../../ubuntu/ubuntu/Ubuntu-Bold.ttf)
+  font-family: ubuntu;
+  src: url(../../ubuntu/Ubuntu-Bold.ttf);
 }
 
 body {
@@ -9,13 +9,14 @@ body {
   background-color: sandybrown;
 }
 
-a {
-  font-family: ubuntu-b;
-  color: #000;
-  text-decoration: none;
-}
-
 @media (max-width: 768px) {
+  
+  a {
+    font-family: ubuntu;
+    color: #000;
+    text-decoration: none;
+  }
+  
   section {
     position: absolute;
     top: 50%;
@@ -61,4 +62,68 @@ a {
     background-color: black;
     color: white;
   }
+}
+@media (min-width: 768px) {
+
+  a {
+    font-family: ubuntu;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 8vh;
+    width: 45%;
+    border-radius: 35px;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      -2px 7px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+  }
+
+  section ul{
+    padding: 0;
+    position: relative;
+    text-align: center;
+  }
+
+  section ul li:first-child{
+    margin-right: 10px;
+  }
+
+  section ul li:last-child{
+    margin-left: 10px;
+  }
+
+  section ul li{
+    display: inline-block;
+    text-align: center;
+  }
+
+  section ul .num {
+    width: 10.5%;
+  }
+
+  section ul .prev,
+  section ul .next {
+    width: 16%;
+  }
+
+  ul .num:hover a{
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+  }
+  
+  ul .active a{
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;    
+  }
+
 }
