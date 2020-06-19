@@ -24,9 +24,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
-    height: 10%;
+    height: 50px;
     border-radius: 30px;
-    width: 45%;
+    width: 50%;
     background-color: white;
   }
 
@@ -101,7 +101,7 @@ body {
   }
   a {
     border-radius: 30px;
-    padding: 10px 15px;
+    padding: 5px 8px;
     transition: 0.075s linear;
   }
   a:hover {
