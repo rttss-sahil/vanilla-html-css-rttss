@@ -1,0 +1,82 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(../../ubuntu/Ubuntu-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  ul {
+    border-radius: 25px;
+    background-color: white;
+    margin: 0;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul li {
+    position: relative;
+    padding: 2px 2.5px;
+    text-align: center;
+    display: inline;
+    font-size: 30px;
+    transition: 0.2s;
+  }
+  
+  ul li span{
+    text-align: center;
+    transform: translateX(-30%);
+    opacity: 1;
+    position: absolute;
+    top: -30px;
+    left: 0%;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  
+  ul li span:before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 45%;
+    transform: translateX(-50%) rotate(45deg) translateY(-20%);
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    z-index: -1;
+  }
+  
+  ul li:hover span{
+    opacity: 1;
+  }
+
+  ul li:first-child {
+    color: skyblue;
+  }
+
+  ul li:nth-child(2) {
+    color: blue;
+  }
+
+  ul li:nth-child(3) {
+    color: pink;
+  }
+
+  ul li:nth-child(4) {
+    color: deepskyblue;
+  }
+}
