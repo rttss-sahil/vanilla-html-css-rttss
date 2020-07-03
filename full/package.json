@@ -1,0 +1,11 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \"Hello from scss\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
