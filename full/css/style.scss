@@ -1,15 +1,16 @@
 @import "config";
-
+@import "menu";
+@import "mobile";
 
 
 * {
   box-sizing: border-box;
-  margin: 5rem;
 }
 
 
 body {
   @include background;
+  
   color: #fff;
   margin: 0;
   height: 100%;
@@ -29,7 +30,7 @@ h3 {
   }
 
   &.sm-heading {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -53,6 +54,15 @@ main {
   padding: 4rem;
   height: 100%;
 
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+
+
   .icons {
     margin-top: 1rem;
 
@@ -61,20 +71,8 @@ main {
 
       &:hover {
         color: $secondary-color;
-        @include ease-out();
+        @include easeOut();
       }
     }
   }
-
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-<<<<<<< HEAD
-  }
 }
-=======
-}
-hhbhh
->>>>>>> 596b597a0a671fb61bda1d32f2152715ff5cc964
