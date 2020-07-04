@@ -1,3 +1,4 @@
+@media (max-width: 1200 px){
 body {
   box-sizing: border-box;
   padding: 0;
@@ -6,9 +7,10 @@ body {
   outline: hidden;
   height: 100vh;
 }
+
 .container {
   text-align: center;
-  width: 96%;
+  width: 80%;
   margin: auto;
 }
 
@@ -17,15 +19,18 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 li {
   display: inline-block;
   padding: 5px;
 }
+
 header a,
 footer a {
   text-decoration: none;
   color: rgb(70, 70, 70);
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -34,10 +39,12 @@ a:hover {
 header {
   height: 50px;
 }
+
 header .container {
   width: 96.8%;
   margin: auto;
 }
+
 header ul {
   margin-top: 15px;
   float: right;
@@ -45,15 +52,17 @@ header ul {
   justify-content: center;
   align-items: center;
 }
-header ul li img{
+
+header ul li img {
   border-radius: 60%;
 }
 
 /* section */
 section {
-  margin: 107px 0;
+  margin: 107px 0 0 0;
   text-align: center;
 }
+
 .search {
   height: 25px;
   margin: 20px auto auto auto;
@@ -65,21 +74,26 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .search:hover {
   box-shadow: 1px 1px 3px rgb(210, 210, 210), -1px -1px 3px rgb(210, 210, 210);
 }
+
 .search input {
   margin-left: 7px;
   height: 20px;
   width: 520px;
   border-width: 0;
 }
+
 .search span {
   padding-left: 10px;
 }
+
 .button {
   margin-top: 25px;
 }
+
 button {
   color: rgb(105, 105, 105);
   border: none;
@@ -88,22 +102,28 @@ button {
   font-size: 0.85rem;
   border: 0.9px solid white;
 }
+
 button:hover {
   border: 0.9px solid rgba(170, 170, 170, 0.5);
 }
+
 .links {
   margin-top: 25px;
 }
+
 .links a {
   text-decoration: none;
   color: #0000ff;
 }
+
 .links a:hover {
   text-decoration: underline;
 }
+
 #text {
   display: none;
 }
+
 whitespace {
   display: none;
 }
@@ -120,6 +140,7 @@ whitespace {
   padding: 10px 30px;
   background-color: rgba(170, 170, 170, 0.25);
 }
+
 .footer2 {
   position: fixed;
   bottom: 0;
@@ -130,10 +151,13 @@ whitespace {
   padding: 10px 30px 10px 30px;
   background-color: rgba(170, 170, 170, 0.25);
 }
+
 .footer2_1 {
   float: left;
 }
+
 .footer2_2 {
   float: right;
   margin-right: 60px;
+}
 }
