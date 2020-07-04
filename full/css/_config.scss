@@ -1,0 +1,24 @@
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(img/img.jpg);
+$background-opacity: 0.9;
+
+@mixin ease-out {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-image-image {
+    &#bg-image {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../../ubuntu/Ubuntu-Medium.ttf);
+  }
