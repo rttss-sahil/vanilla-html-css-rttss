@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  *{
+    outline: none;
+  }
   body {
     box-sizing: border-box;
     padding: 0;
@@ -30,7 +33,7 @@
     text-decoration: none;
     color: rgb(70, 70, 70);
   }
-
+  .links a:hover,
   a:hover {
     text-decoration: underline;
   }
@@ -86,7 +89,7 @@
   .search input {
     margin-left: 7px;
     height: 20px;
-    width: 80%;
+    width: 94%;
     border-width: 0;
   }
 
