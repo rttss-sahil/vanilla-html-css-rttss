@@ -232,7 +232,8 @@ main .icons a:hover {
   margin-top: 4vh;
   display: grid;
   grid-gap: 4vw;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   grid-template-columns: repeat(3, 27vw);
 }
 
@@ -405,7 +406,11 @@ main .icons a:hover {
     right: 25px;
   }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     grid-template-columns: 1fr;
   }
   .bio-image {

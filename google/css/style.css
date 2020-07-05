@@ -1,3 +1,7 @@
+@media screen and (min-width: 769px){
+  *{
+    outline: none;
+  }
 body {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +12,7 @@ body {
 }
 .container {
   text-align: center;
-  width: 96%;
+  width: 80%;
   margin: auto;
 }
 
@@ -26,10 +30,10 @@ footer a {
   text-decoration: none;
   color: rgb(70, 70, 70);
 }
+.links a:hover,
 a:hover {
   text-decoration: underline;
 }
-
 /* Hedaer */
 header {
   height: 50px;
@@ -41,27 +45,29 @@ header .container {
 header ul {
   margin-top: 15px;
   float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header li {
-  padding: 0px 8px;
-}
-header ul li img {
+header ul li img{
   border-radius: 60%;
 }
 
 /* section */
 section {
-  margin-top: 107px;
+  margin: 107px 0;
   text-align: center;
 }
 .search {
   height: 25px;
+  width: 60%;
   margin: 20px auto auto auto;
   border-radius: 50px;
   padding: 10px 35px 10px 0;
   border: 1px solid rgb(210, 210, 210);
-  width: 530px;
-  display: block ruby;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search:hover {
   box-shadow: 1px 1px 3px rgb(210, 210, 210), -1px -1px 3px rgb(210, 210, 210);
@@ -69,8 +75,8 @@ section {
 .search input {
   margin-left: 7px;
   height: 20px;
-  width: 520px;
-  border: none;
+  width: 96%;
+  border-width: 0;
 }
 .search span {
   padding-left: 10px;
@@ -96,18 +102,8 @@ button:hover {
   text-decoration: none;
   color: #0000ff;
 }
-.links a:hover {
-  text-decoration: underline;
-}
-#text {
-  display: none;
-}
-whitespace {
-  display: none;
-}
 
 /* Footer */
-
 .footer1 {
   position: fixed;
   bottom: 51px;
@@ -134,4 +130,5 @@ whitespace {
 .footer2_2 {
   float: right;
   margin-right: 60px;
+}
 }

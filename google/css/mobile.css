@@ -1,0 +1,157 @@
+@media screen and (max-width: 768px) {
+  *{
+    outline: none;
+  }
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 12.5px/1.5 sans-serif;
+    outline: hidden;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Global */
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  header a,
+  footer a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+  }
+  .links a:hover,
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* Hedaer */
+  header {
+    height: 50px;
+  }
+
+  header .container {
+    width: 96.8%;
+    margin: auto;
+  }
+
+  header ul {
+    margin-top: 15px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li img {
+    border-radius: 60%;
+  }
+
+  /* section */
+  section {
+    margin: 107px 0;
+    text-align: center;
+  }
+
+  .search {
+    height: 25px;
+    width: 80%;
+    margin: 20px auto auto auto;
+    border-radius: 50px;
+    padding: 10px 35px 10px 0;
+    border: 1px solid rgb(210, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search:hover {
+    box-shadow: 1px 1px 3px rgb(210, 210, 210), -1px -1px 3px rgb(210, 210, 210);
+  }
+
+  .search input {
+    margin-left: 7px;
+    height: 20px;
+    width: 94%;
+    border-width: 0;
+  }
+
+  .search span {
+    padding-left: 10px;
+  }
+
+  .button {
+    margin-top: 25px;
+  }
+
+  button {
+    color: rgb(105, 105, 105);
+    border: none;
+    border-radius: 5px;
+    padding: 9px 25px;
+    font-size: 0.85rem;
+    border: 0.9px solid white;
+  }
+
+  button:hover {
+    border: 0.9px solid rgba(170, 170, 170, 0.5);
+  }
+
+  .links {
+    margin-top: 25px;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: #0000ff;
+  }
+
+  /* Footer */
+  .footer1 {
+    position: fixed;
+    bottom: 51px;
+    width: 100%;
+    border-top: 0.9px solid rgba(70, 70, 70, 0.2);
+    text-align: left;
+    height: 30px;
+    padding: 10px 30px;
+    background-color: rgba(170, 170, 170, 0.25);
+  }
+
+  .footer2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(70, 70, 70, 0.2);
+    text-align: left;
+    height: 30px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(170, 170, 170, 0.25);
+  }
+
+  .footer2_1 {
+    float: left;
+  }
+
+  .footer2_2 {
+    float: right;
+    margin-right: 60px;
+  }
+}
