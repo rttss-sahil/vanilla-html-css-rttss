@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: rgba(6, 1, 14, 0.795);
+$secondary-color: #aa0a55;
 $show-home-image: true;
 $home-image: url(../img/img.jpg);
 $background-opacity: 0.9;
@@ -22,6 +22,7 @@ $background-opacity: 0.9;
 @mixin background {
   @if $show-home-image {
     &#bg-image{
+      overflow: hidden;
     background: $home-image;
     background-attachment: fixed;
     background-size: cover;
@@ -33,8 +34,9 @@ $background-opacity: 0.9;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
       z-index: -1;
-      background: rgba($primary-color, 0.85);
+      background: rgba($primary-color, 0.55);
     }
   }
 }
