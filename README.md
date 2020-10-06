@@ -1,3 +1,3 @@
-# https://rttss.github.io/dir/
+# https://rttss.github.io/vanilla-html-css-rttss/
 This Repository shall contain all my 'Web Designing' files.
 Please enjoy yourself !!! ...
